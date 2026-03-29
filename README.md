@@ -41,15 +41,16 @@ pip install -r requirements.txt
 
 # 运行后端接口
 uvicorn app.app:app --reload --host 0.0.0.0 --port 8000
-```
 后端 API 文档将在 http://localhost:8000/docs 自动生成。
-4. 运行前端应用 (Streamlit)
+```
+
+4. 运行前端应用 (Streamlit)，打开另一个新的终端窗口（保持后端运行状态），启动前端页面：
 ```Bash
-打开另一个新的终端窗口（保持后端运行状态），启动前端页面：
 # 运行streamlit接口
 streamlit run frontend.py
-```
 执行后，浏览器会自动打开 http://localhost:8501 展示平台界面。
+```
+
 📁 项目结构参考
 ```
 Plaintext
