@@ -38,19 +38,20 @@ pip install -r requirements.txt
 打开一个终端窗口，启动 FastAPI 所在的 Uvicorn 服务器：
 
 Bash
-# 假设你的后端入口文件是 main.py，且应用实例名为 app
-uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+# 运行后端接口
+uvicorn app.app:app --reload --host 0.0.0.0 --port 8000
 后端 API 文档将在 http://localhost:8000/docs 自动生成。
 
 4. 运行前端应用 (Streamlit)
 打开另一个新的终端窗口（保持后端运行状态），启动前端页面：
 
 Bash
-# 假设你的前端入口文件是 app.py
-streamlit run frontend/app.py
+# 运行streamlit接口
+streamlit run frontend.py
 执行后，浏览器会自动打开 http://localhost:8501 展示平台界面。
 
 📁 项目结构参考
+```
 Plaintext
 simple-social/
 ├── backend/               # FastAPI 后端服务
@@ -64,3 +65,4 @@ simple-social/
 │   └── pages/             # 多页面路由
 ├── requirements.txt       # 项目依赖清单
 └── README.md              # 项目说明文档
+```
