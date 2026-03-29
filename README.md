@@ -19,15 +19,14 @@ Simple Social 全栈社交平台
 
 🚀 快速开始
 1. 克隆项目
-Bash
+```Bash
 git clone https://github.com/1ck2432/FastAPI_Project.git
 cd FastAPI_Project
+```
 2. 环境配置
 建议使用虚拟环境（venv 或 conda）来隔离依赖：
-
 ```Bash
 python -m venv venv
-
 # Windows 激活方式:
 venv\Scripts\activate
 # Linux/macOS 激活方式:
@@ -35,24 +34,22 @@ source venv/bin/activate
 
 # 安装前后端依赖
 pip install -r requirements.txt
+```
 3. 运行后端服务 (FastAPI)
 打开一个终端窗口，启动 FastAPI 所在的 Uvicorn 服务器：
-```
-
 ```Bash
+
 # 运行后端接口
 uvicorn app.app:app --reload --host 0.0.0.0 --port 8000
-后端 API 文档将在 http://localhost:8000/docs 自动生成。
-
-4. 运行前端应用 (Streamlit)
-打开另一个新的终端窗口（保持后端运行状态），启动前端页面：
 ```
-
+后端 API 文档将在 http://localhost:8000/docs 自动生成。
+4. 运行前端应用 (Streamlit)
 ```Bash
+打开另一个新的终端窗口（保持后端运行状态），启动前端页面：
 # 运行streamlit接口
 streamlit run frontend.py
-执行后，浏览器会自动打开 http://localhost:8501 展示平台界面。
 ```
+执行后，浏览器会自动打开 http://localhost:8501 展示平台界面。
 📁 项目结构参考
 ```
 Plaintext
